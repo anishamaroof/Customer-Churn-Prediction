@@ -1,77 +1,74 @@
-# Customer-Churn-Prediction
-Machine Learning project for predicting customer churn using data preprocessing, visualization, feature engineering, and classification models.
-Customer Churn Prediction Project
-Overview
+Customer Churn Prediction
 
-This project focuses on predicting customer churn using Machine Learning techniques. The goal of the project is to identify whether a customer is likely to leave a company based on customer-related features and behavioral data.
+DevelopersHub Corporation — Data Science & Analytics Internship
 
-The project includes:
+📌 Task Objective
 
-Data preprocessing
-Exploratory Data Analysis (EDA)
-Feature selection
-Data visualization
-Model training and testing
-Performance evaluation
-Technologies Used
-Python
-Google Colab / Jupyter Notebook
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Dataset
+Predict whether a customer is likely to leave (churn) or stay with a company using machine learning classification models.
 
-The dataset contains customer-related information used to predict churn behavior.
+📂 Dataset
 
-Example features may include:
+Name: Customer Churn Dataset
+Source: Loaded directly using pandas
+Target: Churn — 1 = Customer Left, 0 = Customer Stayed
 
-Customer demographics
-Subscription details
-Usage patterns
-Payment information
-Customer service interaction
-Project Workflow
-Importing Libraries
-Loading Dataset
-Data Cleaning
-Exploratory Data Analysis
-Feature Engineering
-Splitting Training and Testing Data
-Model Building
-Model Evaluation
-Prediction Results
-Machine Learning Models
-
-The following Machine Learning approaches can be used in this project:
-
+Key Features:
+Customer Age
+Tenure
+Monthly Charges
+Total Charges
+Contract Type
+Internet Service
+Payment Method
+And multiple customer-related features...
+🛠️ My Approach
+Step 1 — Data Loading & Inspection
+Loaded dataset using pandas
+Checked shape, columns, and data types
+Displayed summary statistics
+Step 2 — Data Cleaning
+Checked missing values
+Removed duplicate records
+Converted categorical data using encoding techniques
+Step 3 — EDA & Visualizations
+Plot	Purpose
+Count Plot	Churn vs Non-Churn distribution
+Histogram	Monthly charges distribution
+Box Plot	Tenure vs churn relationship
+Correlation Heatmap	Feature correlations
+Pie Chart	Customer contract distribution
+Step 4 — Model Training
 Logistic Regression
-Random Forest
-Decision Tree
-Support Vector Machine (SVM)
-K-Nearest Neighbors (KNN)
-Evaluation Metrics
+Random Forest Classifier
+Decision Tree Classifier
+Train/Test Split:
+80% Training
+20% Testing
+Feature Scaling:
+StandardScaler
+📊 Results & Key Insights
+Model	Accuracy
+Logistic Regression	~82%
+Decision Tree	~78%
+Random Forest	~85%
 
-The model performance is evaluated using:
+✅ Random Forest performed best among all models
 
-Accuracy Score
-Precision
-Recall
-F1-Score
-Confusion Matrix
-Results
-
-The project successfully predicts customer churn and helps understand important factors affecting customer retention.
-
-Future Improvements
-Hyperparameter tuning
-Advanced feature engineering
-Deep Learning models
-Deployment using Flask or Streamlit
-Author
-
-Anisha Maroof BS Data Science Student
-
-GitHub:https://github.com/anishamaroof/Customer-Churn-Prediction/edit/main/README.md
+Key Insights:
+Customers with higher monthly charges are more likely to churn
+Short contract duration increases churn probability
+Long-term customers are less likely to leave
+Electronic payment users showed slightly higher churn rates
+🧰 Libraries Used
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+🚀 How to Run
+Open Google Colab or VS Code
+Upload CUSTOMER_CHURN_PREDICTION.ipynb
+Click Run All
+Dataset loads automatically and model training starts ✅
+Submitted by : Anisha Maroof
 www.linkedin.com/in/anisha-maroof-9a85303a3
